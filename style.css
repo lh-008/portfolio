@@ -79,7 +79,15 @@ h1,h2,h3,h4,h5,h6 {
   text-wrap: balance;
 }
 
-.resume h2{
-  border-bottom: 2px solid black;
-  padding-bottom: 0.2em;
+#name{
+  text-align: center;
 }
+
+.resume h2{
+  border-bottom: 1px solid #888;
+}
+
+
+
+
+
