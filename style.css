@@ -10,11 +10,13 @@ nav ul, nav li {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 1rem;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
+  color: white;
 }
 
 nav a {
@@ -23,19 +25,20 @@ nav a {
   text-align: center;
   padding: 0.5em;
   border-bottom: 0.4em solid transparent;
-  color: black;
+  color: darkgrey;
 }
 
 nav a.current {
   border-bottom-width: 0.4em;
   border-bottom-color: oklch(80% 3% 200);
   padding-bottom: 0.1em;
-  color: black;
+  color: gray;
   font-weight: bold!important;
 }
 
 html{
   --color-accent: oklch(65% 50% 0);
+  color-scheme: light dark;
 }
 
 body {
@@ -44,7 +47,7 @@ body {
 
 a:hover {
   border-bottom-color: var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h)
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 form {
@@ -87,7 +90,18 @@ h1,h2,h3,h4,h5,h6 {
   border-bottom: 1px solid #888;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
 
+.color-scheme select {
+  font-size: inherit;
+  padding: 0.2rem;
+}
 
 
 
