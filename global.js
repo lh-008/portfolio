@@ -65,3 +65,23 @@ select.addEventListener('input', function (event) {
     document.documentElement.style.setProperty('color-scheme', event.target.value);
     localStorage.setItem('colorScheme', theme);
 });
+
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    let mailtoUrl = "mailto:lhl632891114@gmail.com?";
+    const params = [];
+
+    for (let [name, value] of data) {
+        params.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
+    }
+
+    mailtoUrl += params.join("&");
+    console.log("Generated mailto URL:", mailtoUrl);
+
+    location.href = mailtoUrl;
+});
