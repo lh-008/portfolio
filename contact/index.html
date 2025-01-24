@@ -10,14 +10,14 @@
 <body>
     <h1>Contact</h1>
 
-    <form action="mailto:lhl632891114@gmail.com" method="POST" enctype="text/plain">
+    <form id="contact-form" method="get">
         <label for="email">Email:</label>
-        <input type="email" name="email">
+        <input type="email" name="email" id="email">
         <label for="subject">Subject:</label>
-        <input name ="subject">
+        <input type="text" name="subject" id="subject">
         <label for="body">Body:</label>
-        <textarea name="body"></textarea>
-        <button>Submit</button>
+        <textarea name="body" id="body"></textarea>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
