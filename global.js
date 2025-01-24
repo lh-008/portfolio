@@ -7,12 +7,20 @@ function $$(selector, context = document) {
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 const pages = [
-    { url: "", title: "Home" },
-    { url: "projects/", title: "Projects" },
-    { url: "resume/", title: "Resume" },
-    { url: "contact/", title: "Contact" },
+    { url: "https://lh-008.github.io/portfolio/index.html", title: "Home" },
+    { url: "https://lh-008.github.io/portfolio/projects/index.html", title: "Projects" },
+    { url: "https://lh-008.github.io/portfolio/resume/index.html", title: "Resume" },
+    { url: "https://lh-008.github.io/portfolio/contact/index.html", title: "Contact" },
     { url: "https://github.com/lh-008", title: "GitHub" }
 ];
+
+// const pages = [
+//    { url: "https://lh-008.github.io/portfolio/index.html", title: "Home" },
+//    { url: "https://lh-008.github.io/portfolio/projects/index.html", title: "Projects" },
+//    { url: "https://lh-008.github.io/portfolio/resume/index.html", title: "Resume" },
+//    { url: "https://lh-008.github.io/portfolio/contact/index.html", title: "Contact" },
+//    { url: "https://github.com/lh-008", title: "GitHub" }
+// ];
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
