@@ -27,7 +27,10 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
 
-    if (a.host === location.host && a.pathname === location.pathname) {
+    if (
+        (a.host === location.host && a.pathname === location.pathname) ||
+        (a.host === location.host && a.pathname === '/' && p.title === "Home")
+    ) {
         a.classList.add('current');
     }
 
