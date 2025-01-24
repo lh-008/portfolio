@@ -7,10 +7,10 @@ function $$(selector, context = document) {
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 const pages = [
-    { url: "https://lh-008.github.io/portfolio/", title: "Home" },
-    { url: "https://lh-008.github.io/projects/", title: "Projects" },
-    { url: "https://lh-008.github.io/resume/", title: "Resume" },
-    { url: "https://lh-008.github.io/contact/", title: "Contact" },
+    { url: "",           title: "Home" },
+    { url: "https://lh-008.github.io/portfolio/projects/index.html",  title: "Projects" },
+    { url: "https://lh-008.github.io/portfolio/resume/index.html",    title: "Resume" },
+    { url: "https://lh-008.github.io/portfolio/contact/index.html",   title: "Contact" },
     { url: "https://github.com/lh-008", title: "GitHub" }
 ];
 
