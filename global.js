@@ -4,18 +4,18 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
+
 const pages = [
-    { url: "",           title: "Home" },
-    { url: "projects/",  title: "Projects" },
-    { url: "resume/",    title: "Resume" },
-    { url: "contact/",   title: "Contact" },
+    { url: "https://lh-008.github.io/portfolio/", title: "Home" },
+    { url: "https://lh-008.github.io/projects/", title: "Projects" },
+    { url: "https://lh-008.github.io/resume/", title: "Resume" },
+    { url: "https://lh-008.github.io/contact/", title: "Contact" },
     { url: "https://github.com/lh-008", title: "GitHub" }
 ];
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-
-const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 for (let p of pages) {
     let url = p.url;
