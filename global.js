@@ -14,14 +14,6 @@ const pages = [
     { url: "https://github.com/lh-008", title: "GitHub" }
 ];
 
-// const pages = [
-//    { url: "https://lh-008.github.io/portfolio/index.html", title: "Home" },
-//    { url: "https://lh-008.github.io/portfolio/projects/index.html", title: "Projects" },
-//    { url: "https://lh-008.github.io/portfolio/resume/index.html", title: "Resume" },
-//    { url: "https://lh-008.github.io/portfolio/contact/index.html", title: "Contact" },
-//    { url: "https://github.com/lh-008", title: "GitHub" }
-// ];
-
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
@@ -34,7 +26,7 @@ for (let p of pages) {
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
-
+    
     if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add('current');
     }
