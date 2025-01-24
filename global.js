@@ -7,10 +7,10 @@ function $$(selector, context = document) {
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 const pages = [
-    { url: "https://lh-008.github.io/portfolio/", title: "Home" },
-    { url: "https://lh-008.github.io/portfolio/projects/", title: "Projects" },
-    { url: "https://lh-008.github.io/portfolio/resume/", title: "Resume" },
-    { url: "https://lh-008.github.io/portfolio/contact/", title: "Contact" },
+    { url: "./", title: "Home" },
+    { url: "./projects/", title: "Projects" },
+    { url: "./resume/", title: "Resume" },
+    { url: "./contact/", title: "Contact" },
     { url: "https://github.com/lh-008", title: "GitHub" }
 ];
 
@@ -27,10 +27,7 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
 
-    if (
-        (a.host === location.host && a.pathname === location.pathname) ||
-        (a.host === location.host && a.pathname === '/' && p.title === "Home")
-    ) {
+    if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add('current');
     }
 
