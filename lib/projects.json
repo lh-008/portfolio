@@ -2,19 +2,19 @@
     {
         "title": "League of Legends Stats Analysis",
         "year" : 2024,
-        "image": "./images/image1.jpg",
+        "image": "images/image1.jpg",
         "description": "A comprehensive analysis of the League of Legends game statistics. The project aims to provide insights into the game's performance, visualizing the data, and predicting matching outcomes."
     },
     {
         "title": "Expository Visualization",
         "year" : 2025,
-        "image": "./images/image2.jpg",
+        "image": "images/image2.jpg",
         "description": "An expository visualization that discover the trends of the sunshine hours in U.S major cities."
     },
     {
         "title": "Python Image Processing",
         "year" : 2023,
-        "image": "./images/image3.jpg",
+        "image": "images/image3.jpg",
         "description": "Using Python to apply image filter such as grayscale, negation, and brightness adjustment."
     },
     {
