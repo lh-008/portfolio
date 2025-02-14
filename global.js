@@ -11,6 +11,7 @@ const pages = [
     { url: "https://lh-008.github.io/portfolio/projects/index.html", title: "Projects" },
     { url: "https://lh-008.github.io/portfolio/resume/index.html", title: "Resume" },
     { url: "https://lh-008.github.io/portfolio/contact/index.html", title: "Contact" },
+    { url: "https://lh-008.github.io/portfolio/meta/index.html", title: "Meta" },
     { url: "https://github.com/lh-008", title: "GitHub" }
 ];
 
