@@ -163,8 +163,6 @@ function createScatterplot() {
             updateTooltipContent({});
             updateTooltipVisibility(false);
         });
-
-    // Call brush selector for interactive brushing
     brushSelector();
 }
 
@@ -191,7 +189,7 @@ function updateTooltipContent(commit) {
     date.textContent = commit.datetime?.toLocaleString("en", { dateStyle: "full" });
 }
 
-// Step 5.1: Brush Selector
+
 function brushSelector() {
     const svg = document.querySelector('svg');
     d3.select(svg).call(d3.brush().on('start brush end', brushed));
@@ -269,8 +267,6 @@ function updateLanguageBreakdown() {
     return breakdown;
 }
   
-
-  // Load data when DOM is ready
 document.addEventListener("DOMContentLoaded", async () => {
     await loadData();
 });
